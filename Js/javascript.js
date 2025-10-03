@@ -36,7 +36,15 @@ function insertCarR(){
 
     for(n=0;n<database.length;n++){
         console.log(`Brand: ${database[n].brand} | Model: ${database[n].model} | Year: ${database[n].year} | Plate: ${database[n].plate} | Disponible? : ${database[n].rented}`);
-    };    
+    };
+    
+    database.push({brand,model,year,plate,rented});    
 
     console.log("Brand:",brand,"|Model:",model,"|Year:",year,"|Plate:",plate,"|Rented:",rented);
+}
+
+function showCarsR(){
+    for(n=0;n<database.length;n++){
+        window.alert(`Brand: ${database[n].brand} | Model: ${database[n].model} | Year: ${database[n].year} | Plate: ${database[n].plate} | Disponible? : ${database[n].rented}`);
+    }
 }
